@@ -42,9 +42,9 @@ get_load() {
 
 main() {
   # storing the refresh rate in the variable RATE, default is 5
-  RATE=$(get_tmux_option "@dracula-refresh-rate" 5)
-  cpu_load=$(get_tmux_option "@dracula-cpu-display-load" false)
-  cpu_label=$(get_tmux_option "@dracula-cpu-usage-label" "CPU")
+  RATE=$(get_tmux_option "@essentials-refresh-rate" 5)
+  cpu_load=$(get_tmux_option "@essentials-cpu-display-load" false)
+  cpu_label=$(get_tmux_option "@essentials-cpu-usage-label" "CPU")
   if [ "$cpu_load" = true ]; then
     echo "$cpu_label $(get_load)"
   else

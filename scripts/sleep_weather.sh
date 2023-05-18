@@ -8,8 +8,8 @@ fahrenheit=$1
 location=$2
 fixedlocation=$3
 
-LOCKFILE=/tmp/.dracula-tmux-weather.lock
-DATAFILE=/tmp/.dracula-tmux-data
+LOCKFILE=/tmp/.essentials-tmux-weather.lock
+DATAFILE=/tmp/.essentials-tmux-data
 
 ensure_single_process()
 {

@@ -32,7 +32,7 @@ main()
     show_refresh=$(get_tmux_option "@essentials-refresh-rate" 1)
     time_format=$(get_tmux_option "@essentials-time-format" "%Y-%m-%d %a %H:%M")
     show_kubernetes_context_label=$(get_tmux_option "@essentials-kubernetes-context-label" "")
-    use_xresources=$(get_tmux_option "@essentials-xresources" true)
+    use_xresources=$(get_tmux_option "@essentials-xresources" false)
     IFS=' ' read -r -a plugins <<< $(get_tmux_option "@essentials-plugins" "battery network weather")
     show_empty_plugins=$(get_tmux_option "@essentials-show-empty-plugins" true)
 
