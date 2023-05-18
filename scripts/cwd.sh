@@ -14,8 +14,8 @@ getPaneDir()
     echo "${ret%?}"
 }
 # two possible locations of plugin
-source "$HOME/.config/tmux/plugins/tmux/data/nvim_buffer"
-source "$HOME/.tmux/plugins/tmux/data/nvim_buffer"
+source "$HOME/.config/tmux/plugins/tmux-essentials/data/nvim_buffer"
+source "./.tmux/plugins/tmux-essentials/data/nvim_buffer"
 
 path="$nvim_buffer"
 [ -z "$path" ] && path=$(getPaneDir)
