@@ -48,15 +48,15 @@ forecast_unicode()
   weather_condition=$(echo $weather_condition | awk '{print tolower($0)}')
 
   if [[ $weather_condition =~ 'snow' ]]; then
-    echo '❄ '
+    echo ' '
   elif [[ (($weather_condition =~ 'rain') || ($weather_condition =~ 'shower')) ]]; then
-    echo '☂ '
+    echo '󰖗 '
   elif [[ (($weather_condition =~ 'overcast') || ($weather_condition =~ 'cloud')) ]]; then
-    echo '☁ '
+    echo ' '
   elif [[ $weather_condition = 'NA' ]]; then
     echo ''
   else
-    echo '☀ '
+    echo '󰖨 '
   fi
 }
 
